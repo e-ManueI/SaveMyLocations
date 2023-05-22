@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".fragments.AddPlacesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="@string/AddPlaces"
+        android:textSize="30sp"
+        android:textColor="#085C9F"/>
+
+    <EditText
+        android:id="@+id/edStreet"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:hint="Please Enter Street/City Address"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edState"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:hint="Please Enter State Name"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edCountry"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:hint="Please Enter Country Name"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:text="Please Select Image"
+        android:textSize="25sp"/>
+
+        <ImageView
+            android:id="@+id/imgPlace"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/baseline_camera_alt_24"
+            tools:srcCompat="@drawable/baseline_camera_alt_24" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Save Location"/>
+
+</LinearLayout>
